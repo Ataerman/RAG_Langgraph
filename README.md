@@ -22,12 +22,7 @@ The pipeline follows this flow:
 3. **Answer Agent**
    - Uses `OpenAI ChatGPT` to generate a final answer using the top reranked documents.
 
-```mermaid
-graph TD
-retriever_agent --> reranker_agent --> answer_agent --> END
-
-
-🗃️ Technologies Used
+*** Technologies Used
 LangGraph
 
 LangChain
@@ -37,3 +32,11 @@ FAISS
 Cohere Rerank
 
 OpenAI GPT-3.5
+
+
+```mermaid
+graph TD
+retriever_agent --> reranker_agent --> answer_agent --> END
+
+
+
